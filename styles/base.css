@@ -1,0 +1,76 @@
+header {
+    background-color: #1b4965;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: #bee9e8;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    background-color: #1b4965;
+    color: white;
+    margin: -1rem -1rem 1rem -1rem;
+    padding: 0.75rem;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #1b4965;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#lastModified {
+    color: #ffff00;
+    font-size: 0.9rem;
+}
