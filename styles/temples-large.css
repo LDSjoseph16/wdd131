@@ -1,7 +1,9 @@
 @media (min-width: 768px) {
     #menu { display: none; }
 
-    .navigation { display: flex; justify-content: center; background-color: #330066; }
+    nav { flex-direction: row; justify-content: center; }
+
+    .navigation { display: flex; flex-direction: row; }
     .navigation li { flex: 1 1 auto; }
 
     .gallery { 
