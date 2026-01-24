@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+    #menu { display: none; }
+
+    .navigation { display: flex; justify-content: center; background-color: #330066; }
+    .navigation li { flex: 1 1 auto; }
+
+    .gallery { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
