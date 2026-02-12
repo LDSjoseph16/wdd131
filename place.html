@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iligan City | Philippines</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Iligan City</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 800px)">
+                <img src="images/hero-small.webp" alt="Maria Cristina Falls" loading="lazy">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><span>Area:</span> 813.37 km²</li>
+                <li><span>Population:</span> 342,618</li>
+                <li><span>Capital:</span> Manila</li>
+                <li><span>Languages:</span> Cebuano, Tagalog, English</li>
+                <li><span>Currency:</span> Philippine Peso (₱)</li>
+                <li><span>Time Zone:</span> PHT (UTC+8)</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
+            <ul>
+                <li><span>Temperature:</span> 8 °C</li>
+                <li><span>Conditions:</span> Partly Cloudy</li>
+                <li><span>Wind:</span> 10 km/h</li>
+                <li><span>Wind Chill:</span> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Your Name | Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
