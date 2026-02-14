@@ -3,63 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – Dynamic Web Fundamentals – Edgar Joseph Pelinggon</title>
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals home page for Edgar Joseph Pelinggon.">
-    <meta name="author" content="Edgar Joseph Pelinggon">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <title>Iligan City | The City of Majestic Waterfalls</title>
+    <meta name="description" content="Explore the stunning waterfalls of Iligan City, including Maria Cristina and Tinago Falls.">
+    <link rel="icon" href="images/iligan-city-seal.png" type="image/png">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
 </head>
 <body>
     <header>
-        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <div class="logo-bar">
+            <img src="images/iligan-city-seal.png" alt="Iligan City Seal" width="60" height="60">
+            <h1>Iligan City</h1>
+        </div>
         <nav>
-            <a href="https://www.linkedin.com">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
-            <a href="#">Final Project</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="plan.html">Plan Your Visit</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <h1>Edgar Joseph Pelinggon</h1>
-        <div class="grid-container">
-            <section class="card">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <p>My name is Edgar Joseph Pelinggon and I go by Joseph or Seph. I was born in the Philippines and I live in Iligan City. I am passionate about learning new technologies and developing my skills in web development.</p>
-                    <img src="images/profile.jpg" alt="Edgar Joseph Pelinggon">
-                </div>
-                
-                <hr>
-                <h3 class="location">Iligan City, Philippines</h3>
-                <div class="country-profile">
-                    <img src="images/philippines.png" alt="Flag of the Philippines" class="flag">
-                    <p>The Philippines is an archipelagic country in Southeast Asia. Iligan City, known as the "City of Majestic Waterfalls," is home to 23 waterfalls, the most famous being Maria Cristina Falls. It is a vibrant industrial and educational hub in Northern Mindanao.</p>
-                </div>
-                <p class="caption">Official Flag of the Philippines</p>
-            </section>
-
-            <section class="card">
-                <h3>Web Dev Resources</h3>
-                <ul>
-                    <li><a href="https://dev.to/">Dev.to Community</a></li>
-                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                    <li><a href="https://www.udemy.com/">Udemy</a></li>
-                    <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
-                </ul>
-            </section>
+        <div class="hero">
+            <img src="images/hero-maria-cristina.webp" alt="Maria Cristina Falls" width="1200" height="600">
+            <div class="hero-label">
+                <h2>The Power of Iligan: Maria Cristina Falls</h2>
+            </div>
         </div>
+        <section class="intro">
+            <h3>Nature's Grandeur Awaits</h3>
+            <p>Iligan City, known as the City of Majestic Waterfalls, boasts over 20 natural falls. From the industrial power of Maria Cristina to the hidden beauty of Tinago, there is an adventure for every traveler.</p>
+        </section>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear">2025</span> 🌸 Edgar Joseph Pelinggon 🌸 Philippines</p>
-        <p id="lastModified">Last Modification: 05/30/2025 13:54:42</p>
+        <p>&copy; <span id="year"></span> | Iligan City Guide | <a href="references.html">References</a></p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

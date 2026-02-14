@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Visit | Iligan City Guide</title>
+    <meta name="description" content="Plan your trip to Iligan City by saving your travel preferences.">
+    <link rel="icon" href="images/iligan-city-seal.png" type="image/png">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-bar">
+            <img src="images/iligan-city-seal.png" alt="Iligan City Seal" width="60" height="60">
+            <h1>Plan Your Trip</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="plan.html" class="active">Plan Your Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-container">
+            <div id="user-greeting"></div>
+            <form id="visit-form" method="get" action="index.html">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="fullName" required>
+
+                <label for="interest">Primary Interest:</label>
+                <select id="interest" name="interest" required>
+                    <option value="" disabled selected>Choose interest...</option>
+                    <option value="waterfalls">Waterfalls</option>
+                    <option value="food">Local Food</option>
+                    <option value="culture">History</option>
+                </select>
+
+                <fieldset>
+                    <legend>Accommodation Preference</legend>
+                    <input type="radio" id="hotel" name="stay" value="hotel" required>
+                    <label for="hotel">Hotel</label>
+                    <input type="radio" id="resort" name="stay" value="resort">
+                    <label for="resort">Resort</label>
+                </fieldset>
+
+                <input type="submit" value="Save My Trip Plan">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Iligan City Guide</p>
+    </footer>
+</body>
+</html>

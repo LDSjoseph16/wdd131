@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfalls & Attractions | Iligan City</title>
+    <meta name="description" content="Browse our gallery of Iligan's waterfalls with filtering options for height and access.">
+    <link rel="icon" href="images/iligan-city-seal.png" type="image/png">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/attractions.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-bar">
+            <img src="images/iligan-city-seal.png" alt="Iligan City Seal" width="60" height="60">
+            <h1>Iligan Attractions</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html" class="active">Attractions</a></li>
+                <li><a href="plan.html">Plan Your Visit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="filters">
+            <button id="all-btn">All Falls</button>
+            <button id="high-btn">Highest Drops</button>
+            <button id="easy-btn">Easy Access</button>
+        </div>
+        <div id="attractions-grid" class="grid"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Iligan City Guide</p>
+    </footer>
+</body>
+</html>
